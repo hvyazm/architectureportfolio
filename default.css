@@ -1,0 +1,227 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+}
+
+/* Add this to your CSS file */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  padding: 1rem;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+.title {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: 300;
+  font-family: 'Avenir Next', sans-serif;
+  color: #ff078f;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not exceed the viewport width */
+  height: auto;
+}
+
+.section-title, .contact-title {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem 0 1rem 0; 
+  font-family: 'Avenir Next', sans-serif;
+  color: #ff078f;
+}
+
+.about-section, .projects-section, .skills-section, .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  padding: 2rem;
+  color: white;
+}
+
+.about-content {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Avenir Next', sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Ensure it's horizontal */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Add this to make the list items horizontal */
+}
+
+.nav-list li {
+  margin: 0 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-list a:hover {
+  color: #ff078f;
+}
+/* Your existing CSS */
+
+/* Your existing CSS */
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    transition: 0.4s;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-list a:hover {
+    color: #ff078f;
+  }
+}
+
+
+.projects-content {
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.project-item {
+  text-align: center; /* Center the text below the image */
+}
+
+.project-image {
+  width: 100%; /* Make sure the image covers the entire box */
+  height: 200px; /* Set a fixed height for the images */
+  background-size: cover;
+  background-position: center;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Avenir Next', sans-serif;
+  padding: 1rem;
+  
+}
+
+.about-content, .projects-content, .skills-content, .contact-content {
+  width: 100%;
+  max-width: 1100px; /* Adjust as needed */
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+.skills-section{
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+.section-item p {
+  margin: 10px 0; /* Add some space between the lines */
+}
+
+.contact-section{
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+.description2 {
+  position: absolute;
+  padding-top: 20rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7c7c7c;
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 14px;
+  padding-bottom: 10rem;
+}
