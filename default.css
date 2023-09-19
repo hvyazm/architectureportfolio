@@ -31,10 +31,11 @@ header {
 
 .title {
   font-size: 24px; /* Adjust the font size */
-  font-weight: 300;
+  font-weight: 600;
   font-family: 'Avenir Next', sans-serif;
-  color: #ff078f;
+  color: #ffffff;
 }
+
 
 .header-image {
   width: 100%;
